@@ -1,6 +1,6 @@
 {% set name = "perl-path-tiny" %}
-{% set version = "0.122" %}
-{% set sha256 = "4bc6f76d0548ccd8b38cb66291a885bf0de453d0167562c7b82e8861afdcfb7c" %}
+{% set version = "0.124" %}
+{% set sha256 = "fa083144781e46817ec39d21962bbbb0533c201f3baf031d2999a785a2a013fd" %}
 
 package:
   name: {{ name }}
@@ -35,7 +35,7 @@ test:
 about:
   home: https://metacpan.org/dist/Path-Tiny
   license: Apache-2.0
-  summary: 'File path utility'
+  summary: File path utility
   license_file:
     - LICENSE
 
