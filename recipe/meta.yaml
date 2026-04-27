@@ -1,6 +1,6 @@
 {% set name = "perl-path-tiny" %}
-{% set version = "0.124" %}
-{% set sha256 = "fa083144781e46817ec39d21962bbbb0533c201f3baf031d2999a785a2a013fd" %}
+{% set version = "0.150" %}
+{% set sha256 = "ff20713d1a14d257af9c78209001f40dc177e4b9d1496115cbd8726d577946c7" %}
 
 package:
   name: {{ name }}
@@ -11,12 +11,12 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  noarch: generic
   number: 0
+  noarch: generic
   script:
     - perl Makefile.PL INSTALLDIRS=vendor NO_PERLLOCAL=1 NO_PACKLIST=1
     - make
-    - make test
+    - make test -j"${CPU_COUNT}"
     - make install VERBINST=1
 
 requirements:
@@ -33,12 +33,13 @@ test:
     - Path::Tiny
 
 about:
-  home: https://metacpan.org/dist/Path-Tiny
-  license: Apache-2.0
-  summary: File path utility
-  license_file:
-    - LICENSE
+  home: "https://metacpan.org/pod/Path::Tiny"
+  license: "Apache-2.0"
+  summary: "File path utility."
+  license_file: LICENSE
+  doc_url: "https://metacpan.org/pod/Path::Tiny"
 
 extra:
   recipe-maintainers:
     - cbrueffer
+    - conda-forge/perl-packagers

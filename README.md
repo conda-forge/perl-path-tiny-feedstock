@@ -1,13 +1,15 @@
-About perl-path-tiny
-====================
-
-Home: https://metacpan.org/dist/Path-Tiny
-
-Package license: Apache-2.0
+About perl-path-tiny-feedstock
+==============================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/perl-path-tiny-feedstock/blob/main/LICENSE.txt)
 
-Summary: File path utility
+Home: https://metacpan.org/pod/Path::Tiny
+
+Package license: Apache-2.0
+
+Summary: File path utility.
+
+Documentation: https://metacpan.org/pod/Path::Tiny
 
 Current build status
 ====================
@@ -95,7 +97,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
@@ -144,4 +146,5 @@ Feedstock Maintainers
 =====================
 
 * [@cbrueffer](https://github.com/cbrueffer/)
+* [@conda-forge/perl-packagers](https://github.com/orgs/conda-forge/teams/perl-packagers/)
 
